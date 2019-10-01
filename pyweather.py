@@ -84,9 +84,8 @@ class Ui_MainWindow(object):
 
     def weather(self):
         city = self.cityName.text()
-        url = "Replace it with API URL"  #API URL
+        url = "https://openweathermap.org/data/2.5/weather?q={}&appid=b6907d289e10d714a6e88b30761fae22" .format(city)
         try:
-            #making requests and getting the information
             res = requests.get(url)
             output = res.json()
             weatherStatus = output["weather"][0]["description"]

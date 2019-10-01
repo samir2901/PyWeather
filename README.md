@@ -6,4 +6,3 @@
 Modules Required
 1. PyQt5
 2. requests
-
